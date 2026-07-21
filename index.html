@@ -407,6 +407,12 @@
       font-size: 14px;
     }
 
+    .card-link.disabled {
+      color: #98a2b3;
+      cursor: default;
+      user-select: none;
+    }
+
     .info-row {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
@@ -501,7 +507,6 @@
           <p>Bozankaya · Proje Dokümantasyon ve Raporlama</p>
         </div>
       </div>
-      <div class="status-pill"><span class="status-dot"></span> Portal aktif · Son güncelleme: <strong>18.06.2026</strong></div>
     </header>
 
     <section class="hero">
@@ -510,19 +515,19 @@
           <div class="eyebrow">Kurumsal raporlama merkezi</div>
           <h2>ARGE PD raporlarına <span>tek noktadan</span> erişim.</h2>
           <p class="hero-copy">
-            Main Plan, ürün ağacı analizleri ve aylık yayın süreç takip raporlarını standart bir portal üzerinden görüntüleyin. Proje ekipleri için hızlı erişim, güncel görünüm ve yönetici seviyesinde özet bilgi sağlar.
+            Main Plan, ürün ağacı, aylık yayın süreç takibi ve yayın-revizyon analiz raporlarını standart bir portal üzerinden görüntüleyin. Proje ekipleri için hızlı erişim, güncel görünüm ve yönetici seviyesinde özet bilgi sağlar.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#raporlar">Raporları Görüntüle →</a>
-            <a class="btn btn-ghost" href="#bilgi">Kullanım Bilgisi</a>
+            <a class="btn btn-ghost" href="#bilgi">Portal Bilgisi</a>
           </div>
         </div>
 
         <aside class="hero-panel" aria-label="Portal özet bilgileri">
           <p class="panel-title">Portal Özeti</p>
           <div class="metric-grid">
-            <div class="metric"><strong>3</strong><span>Yayındaki ana rapor</span></div>
-            <div class="metric"><strong>PD</strong><span>Sorumlu raporlama birimi</span></div>
+            <div class="metric"><strong>4</strong><span>Aktif rapor</span></div>
+            <div class="metric"><strong>ARGE PLANLAMA</strong><span>Sorumlu raporlama birimi</span></div>
             <div class="metric"><strong>Aktif</strong><span>SharePoint yayın durumu</span></div>
             <div class="metric"><strong>HTML</strong><span>Gömülü rapor formatı</span></div>
           </div>
@@ -564,13 +569,22 @@
         <p>Aylık yayın performansı, birim bazlı süreç takibi ve raporlama çıktılarını görüntüleyin.</p>
         <a class="card-link" href="https://plmdurum.bozankaya.com.tr/" target="_blank" rel="noopener">Raporu Aç →</a>
       </article>
+
+      <article class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16"/><path d="M4 12h10"/><path d="M4 19h7"/><path d="M17 10v8"/><path d="M14 15l3 3 3-3"/></svg>
+        </div>
+        <h4>Yayın-Revizyon Analiz Raporu</h4>
+        <p>Yayın ve revizyon verilerini proje ve birim bazında karşılaştırmalı olarak analiz edin.</p>
+        <a class="card-link" href="https://argepdbozankaya.github.io/revizyontakip/" target="_blank" rel="noopener noreferrer">Raporu aç <span aria-hidden="true">→</span></a>
+      </article>
     </section>
 
     <section class="info-row" id="bilgi">
       <div class="notice">
-        <h4>Kullanım Notu</h4>
+        <h4>ARGE PD Raporlama Merkezi</h4>
         <p>
-          Bu giriş sayfası SharePoint içine <strong>Göm / Embed</strong> bileşeniyle eklenmek üzere hazırlanmıştır. Kartlardaki bağlantı alanlarını kendi GitHub Pages veya SharePoint rapor linklerinizle değiştirin. Sonrasında HTML dosyasını GitHub'a yükleyip SharePoint sayfanıza iframe olarak ekleyebilirsiniz.
+          Proje planlama, ürün ağacı, yayın süreçleri ve revizyon analizlerine ait güncel raporlara tek noktadan erişin. Yönetici ve ekip görünümleri için hazırlanan raporlar, karar alma süreçlerini hızlandırmak ve temel performans göstergelerini düzenli olarak takip etmek amacıyla merkezi bir yapıda sunulmaktadır.
         </p>
       </div>
 
@@ -580,6 +594,7 @@
           <a class="quick-item" href="https://projedurum.bozankaya.com.tr/" target="_blank" rel="noopener"><span>Main Plan Dashboard</span><span>→</span></a>
           <a class="quick-item" href="https://urunagaclari.bozankaya.com.tr/" target="_blank" rel="noopener"><span>Ürün Ağaçları</span><span>→</span></a>
           <a class="quick-item" href="https://plmdurum.bozankaya.com.tr/" target="_blank" rel="noopener"><span>Aylık Yayın Süreç Takip</span><span>→</span></a>
+          <a class="quick-item" href="https://argepdbozankaya.github.io/revizyontakip/" target="_blank" rel="noopener noreferrer"><span>Yayın-Revizyon Analiz Raporu</span><span>→</span></a>
         </div>
       </div>
     </section>
