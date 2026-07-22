@@ -69,14 +69,14 @@
   .hero{
     position:relative; overflow:hidden; border-radius:var(--radius-xl);
     border:1px solid var(--border);
-
+    margin-top:52px;
     background:
       repeating-linear-gradient(0deg, rgba(255,255,255,.03) 0 1px, transparent 1px 34px),
       repeating-linear-gradient(90deg, rgba(255,255,255,.03) 0 1px, transparent 1px 34px),
       radial-gradient(ellipse 60% 90% at 100% 0%, rgba(10,135,156,.16), transparent 60%),
       linear-gradient(150deg, rgba(128,13,17,.55) 0%, rgba(24,20,26,.99) 42%, #12151b 100%);
     box-shadow:var(--shadow-lg);
-    padding:34px 48px;
+    padding:50px 48px;
   }
   .hero::after{
     content:""; position:absolute; top:-55%; left:-15%; width:60%; height:220%;
@@ -142,7 +142,7 @@
   @media (max-width:760px){ .meta-strip{grid-template-columns:1fr 1fr;} }
 
   /* ---------- section head ---------- */
-  .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin:44px 2px 20px;}
+  .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin:0 2px 20px;}
   .section-head .tag{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--cyan); font-weight:700; margin-bottom:8px;}
   .section-head h3{margin:0; font-size:25px; font-weight:700; letter-spacing:-.02em;}
   .section-head p{margin:8px 0 0; color:var(--text3); font-size:13.5px; max-width:480px;}
@@ -233,71 +233,6 @@
 
   <main class="shell">
 
-    <section class="hero">
-      <div class="hero-frame" aria-hidden="true">
-        <span class="corner tl"></span>
-        <span class="corner tr"></span>
-        <span class="corner bl"></span>
-        <span class="corner br"></span>
-      </div>
-      <div class="hero-grid">
-        <div>
-          <h2>Proje verilerine <span>tek giriş noktasından</span> ulaşın.</h2>
-          <p class="hero-copy">
-            Main Plan, ürün ağacı, aylık yayın takibi ve yayın-revizyon analizini aynı portal üzerinden görüntüleyin.
-            Her ekip güncel veriye aynı yerden ulaşır, yönetim özet göstergeleri tek bakışta takip eder.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#raporlar">Raporları görüntüle →</a>
-            <a class="btn btn-ghost" href="#bilgi">Portal hakkında</a>
-          </div>
-        </div>
-
-        <div class="hub-wrap" aria-hidden="true">
-          <svg class="hub-svg" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="hubGradient" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#5b9cf6"/>
-                <stop offset="1" stop-color="#38c7e0"/>
-              </linearGradient>
-            </defs>
-
-            <path class="hub-line d1" d="M92,150 C170,150 170,44 262,44" pathLength="1"/>
-            <path class="hub-line d2" d="M92,150 C170,150 170,116 262,116" pathLength="1"/>
-            <path class="hub-line d3" d="M92,150 C170,150 170,188 262,188" pathLength="1"/>
-            <path class="hub-line d4" d="M92,150 C170,150 170,258 262,258" pathLength="1"/>
-
-            <circle class="hub-core-ring" cx="92" cy="150" r="44"/>
-            <circle class="hub-core" cx="92" cy="150" r="34"/>
-            <text class="hub-core-label" x="92" y="147">ARGE</text>
-            <text class="hub-core-sub" x="92" y="159">PD PORTAL</text>
-
-            <circle class="hub-node d1" cx="262" cy="44" r="7" stroke="#5b9cf6"/>
-            <circle class="hub-node d2" cx="262" cy="116" r="7" stroke="#5b9cf6"/>
-            <circle class="hub-node d3" cx="262" cy="188" r="7" stroke="#38c7e0"/>
-            <circle class="hub-node d4" cx="262" cy="258" r="7" stroke="#ff6b7a"/>
-
-            <text class="hub-tag" x="276" y="30">01</text>
-            <text class="hub-label d1" x="276" y="48">MAIN PLAN</text>
-            <text class="hub-tag" x="276" y="102">02</text>
-            <text class="hub-label d2" x="276" y="120">ÜRÜN AĞACI</text>
-            <text class="hub-tag" x="276" y="174">03</text>
-            <text class="hub-label d3" x="276" y="192">YAYIN TAKİP</text>
-            <text class="hub-tag" x="276" y="244">04</text>
-            <text class="hub-label d4" x="276" y="262">REVİZYON ANALİZİ</text>
-          </svg>
-          <p class="hub-caption">Portal, dört raporlama sistemine tek merkezden bağlanır.</p>
-        </div>
-      </div>
-
-      <div class="meta-strip">
-        <div class="meta-item"><div class="l">Aktif rapor</div><div class="v">04</div></div>
-        <div class="meta-item"><div class="l">Sorumlu birim</div><div class="v">ARGE Planlama</div></div>
-        <div class="meta-item"><div class="l">Yayın durumu</div><div class="v">Aktif</div></div>
-        <div class="meta-item"><div class="l">Erişim formatı</div><div class="v">HTML / Web</div></div>
-      </div>
-    </section>
-
     <section id="raporlar">
       <div class="section-head">
         <div>
@@ -347,6 +282,71 @@
           <p>Yayın ve revizyon verilerini proje ve birim bazında karşılaştırmalı olarak analiz edin.</p>
           <span class="card-link">Raporu aç <span class="arrow">→</span></span>
         </a>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-frame" aria-hidden="true">
+        <span class="corner tl"></span>
+        <span class="corner tr"></span>
+        <span class="corner bl"></span>
+        <span class="corner br"></span>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <h2>Proje verilerine <span>tek giriş noktasından</span> ulaşın.</h2>
+          <p class="hero-copy">
+            Main Plan, ürün ağacı, aylık yayın takibi ve yayın-revizyon analizini aynı portal üzerinden görüntüleyin.
+            Her ekip güncel veriye aynı yerden ulaşır, yönetim özet göstergeleri tek bakışta takip eder.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#raporlar">Raporlara dön ↑</a>
+            <a class="btn btn-ghost" href="#bilgi">Portal hakkında</a>
+          </div>
+        </div>
+
+        <div class="hub-wrap" aria-hidden="true">
+          <svg class="hub-svg" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hubGradient" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#5b9cf6"/>
+                <stop offset="1" stop-color="#38c7e0"/>
+              </linearGradient>
+            </defs>
+
+            <path class="hub-line d1" d="M92,150 C170,150 170,44 262,44" pathLength="1"/>
+            <path class="hub-line d2" d="M92,150 C170,150 170,116 262,116" pathLength="1"/>
+            <path class="hub-line d3" d="M92,150 C170,150 170,188 262,188" pathLength="1"/>
+            <path class="hub-line d4" d="M92,150 C170,150 170,258 262,258" pathLength="1"/>
+
+            <circle class="hub-core-ring" cx="92" cy="150" r="44"/>
+            <circle class="hub-core" cx="92" cy="150" r="34"/>
+            <text class="hub-core-label" x="92" y="147">ARGE</text>
+            <text class="hub-core-sub" x="92" y="159">PD PORTAL</text>
+
+            <circle class="hub-node d1" cx="262" cy="44" r="7" stroke="#5b9cf6"/>
+            <circle class="hub-node d2" cx="262" cy="116" r="7" stroke="#5b9cf6"/>
+            <circle class="hub-node d3" cx="262" cy="188" r="7" stroke="#38c7e0"/>
+            <circle class="hub-node d4" cx="262" cy="258" r="7" stroke="#ff6b7a"/>
+
+            <text class="hub-tag" x="276" y="30">01</text>
+            <text class="hub-label d1" x="276" y="48">MAIN PLAN</text>
+            <text class="hub-tag" x="276" y="102">02</text>
+            <text class="hub-label d2" x="276" y="120">ÜRÜN AĞACI</text>
+            <text class="hub-tag" x="276" y="174">03</text>
+            <text class="hub-label d3" x="276" y="192">YAYIN TAKİP</text>
+            <text class="hub-tag" x="276" y="244">04</text>
+            <text class="hub-label d4" x="276" y="262">REVİZYON ANALİZİ</text>
+          </svg>
+          <p class="hub-caption">Portal, dört raporlama sistemine tek merkezden bağlanır.</p>
+        </div>
+      </div>
+
+      <div class="meta-strip">
+        <div class="meta-item"><div class="l">Aktif rapor</div><div class="v">04</div></div>
+        <div class="meta-item"><div class="l">Sorumlu birim</div><div class="v">ARGE Planlama</div></div>
+        <div class="meta-item"><div class="l">Yayın durumu</div><div class="v">Aktif</div></div>
+        <div class="meta-item"><div class="l">Erişim formatı</div><div class="v">HTML / Web</div></div>
       </div>
     </section>
 
